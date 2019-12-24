@@ -1,0 +1,153 @@
+/* style.css */
+/* reset */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+ul{list-style-type: none;}
+a{
+    text-decoration: none;
+    color: #35302d;
+}
+.clear{clear:both;}
+body {
+    font-size: 13px;
+    color: #333;
+}
+
+/* header 영역 */
+#main_header {
+    position: relative;
+    /* background: #ccc; */
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#main_gnb {
+    position: relative;
+    /* outline: 1px solid red; */
+    /* border-top: 1px solid rgba(0,0,0,0.2); */
+    padding: 15px;
+}
+
+/* 1단계 메뉴 */
+#main_gnb > .depth1 > li {
+    padding: 10px;
+    position: relative;
+    float: left;
+    left: 575px;
+    width: 13%;
+    /* outline: 1px solid red; */
+    line-height: 20px;
+    z-index: 99;
+    /* background: #ccc; */
+}
+#main_gnb > .depth1 > li > a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* hover시 메뉴 언더라인 효과 */
+#main_gnb > .depth1 > li > a:hover {
+    color: red;
+}
+
+/* 2단계 메뉴 */
+#main_gnb .depth2 {
+    /* background: #fff; */
+    height: 100px;
+    padding: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    /* outline: 1px solid green; */
+    text-align: center;
+}
+#main_gnb .depth2 {
+    position: relative;    
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    /* outline: 1px solid red; */
+    padding: 10px;
+}
+#main_gnb .depth2 a {
+    display: block;
+    position: relative;
+    color: #bb692d;
+}
+#main_gnb .depth2 a:hover {
+    color: #7b422e;
+}
+#main_gnb .depth2.show {
+    height: 100px;
+    padding: 10px;
+    line-height: 30px;
+    overflow: hidden;
+    /* outline: 1px solid green; */
+}
+
+/* 메인 베너 */
+#main_banner {
+    /* 가변이미지범위: 1200px ~ 1920px(HD) */
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto; 
+    width: 1200px;
+}
+#main_banner .slider img {width: 100%;}
+
+#news {
+    width: 1200px;
+    margin: 0 auto;
+}
+#news > .news_list{
+    width: 400px;
+    float: left;
+    /* outline: 1px solid red; */
+    padding-top: 100px;
+}
+#news .news_list > h3 {
+    font-size: 22px;
+    color: #7b422e;
+}
+#news .news_list > ul {
+    /* outline: 1px solid red; */
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+#news .news_list > ul > li {
+    line-height: 2.8em;
+    border-bottom: 1px solid #ccc;
+}
+#news .news_list > ul > li > .date {
+    float:right;
+    color: #ccc;
+    font-size: 0.87em;
+}
+#news > .news_list2 {
+    width: 400px;
+    float: left;
+    padding-top: 100px;
+}
+#news > .news_list2 h3 {
+    font-size: 22px;
+    color: #7b422e;
+}
+#news > .news_list2 li img {
+    outline: 1px solid red;
+    float: left;
+}
+#news > .news_list3 {
+    width: 400px;
+    float: left;
+    padding-top: 100px;
+}
+#news > .news_list3 h3 {
+    font-size: 22px;
+    color: #7b422e;
+}
